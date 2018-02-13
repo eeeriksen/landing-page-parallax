@@ -1,4 +1,13 @@
-window.addEventListener('scroll', function(){
+(function(){
+	//Título de inicio fade in
+	function show(){
+		document.getElementById('tit1').classList.add('active');
+		document.getElementById('tit2').classList.add('active');
+	}
+	setInterval(show, 400);
+
+	//Parallax de titulos con background fixed
+	window.addEventListener('scroll', function(){
 	var y = window.pageYOffset;
 	//Tralado en el eje vertical el titulo segun el top del window
 	document.getElementById('roti').style.transform =
@@ -6,7 +15,7 @@ window.addEventListener('scroll', function(){
 	//capturo el top del ultimo elemento de la seccion anterior al paralax que viene
 	//y traslado el titulo si es mayor la posicion del scroll
 	var refKuk = document.getElementById('kukenan').offsetTop;
-	if (y > refKuk - (window.innerHeight/1.2)) {
+	if (y > refKuk - (window.innerHeight)) {
 		document.getElementById('kuti').style.transform =
 			"translateY(" + (y - refKuk) * 0.35 + "px)";
 	}
@@ -17,5 +26,5 @@ window.addEventListener('scroll', function(){
 		document.getElementById('sati').style.transform =
 			"translateY(" + (y - refSal) * 0.35 + "px)";
 	}
-}, true);
-
+	}, true);
+})();
