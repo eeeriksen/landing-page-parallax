@@ -73,6 +73,9 @@ header h3 {
 	margin: auto;
 }
 
+section {
+	overflow: hidden;
+}
 p {
 	font-family: 'Raleway', sans-serif;
 	margin: 45px 0;
