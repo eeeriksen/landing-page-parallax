@@ -1,0 +1,140 @@
+ @import url('https://fonts.googleapis.com/css?family=Raleway|Montserrat:400,700,800');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-color: #fff;
+	padding: 20px;
+}
+
+.contenedor {
+	width: 100%;
+}
+
+header {
+	padding: 50px 0 70px 0;
+	width: 100%;
+	margin: auto;
+}
+
+h1.title-header, header h3 {
+	font-size: 40px;
+	color: #555;
+	font-weight: bold;
+	text-align: center;
+}
+
+header h3 {
+	font-size: 24px;
+	letter-spacing: 6px;
+	padding-left: 8px;
+}
+
+#roraima, #kukenan, #salto-angel {
+	background-attachment: fixed;
+	background-color: #444;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 250px 0;
+}
+
+#roraima {
+	background-image: url(https://aquivamos.org/wp-content/uploads/2016/05/Jacuzzis-do-Monte-Roraima-1.jpg);
+}
+
+#kukenan {
+	background-image: url(https://static.thousandwonders.net/Kuken%C3%A1n.640.1728.jpg);
+	}
+
+#salto-angel {
+	background-image: url(https://www.desktopbackground.org/download/o/2015/12/08/1054106_dragon-falls-venezuela-waterfall-south-america-nature_1920x1200_h.jpg);
+
+}
+
+.parallax {
+	width: 100%;
+	margin: auto;
+}
+
+.title-parallax {
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	font-weight: bold;
+}
+
+.contenedor-texto {
+	width: 60%;
+	margin: auto;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	margin: 45px 0;
+	line-height: 25px;
+	font-size: 15px;
+}
+
+div p:first-child:first-letter {
+	font-size: 30px;
+	padding: 10px 2px 0 0;
+	font-weight: bold;
+	color: #555;
+}
+
+hr {
+	width: 240px;
+	border: 3px solid gray;
+	margin: auto;
+}
+@media all and (max-width: 800px) {
+	.contenedor-texto {
+		width: 75%;
+	}
+	#roraima, #kukenan, #salto-angel {
+		padding: 200px 0;
+	}
+	h1.title-parallax {
+		font-size: 52px;
+	}
+	hr {
+		width: 100px;
+	}
+	h1.title-header {
+    	font-size: 35px;
+	}
+	header h3 {
+		font-size: 20px;
+		padding-left: 8px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.contenedor-texto {
+		width: 80%;
+	}
+	#roraima, #kukenan, #salto-angel {
+		padding: 150px 0;
+	}
+	h1.title-parallax {
+		font-size: 45px;
+	}
+	hr {
+		width: 60px;
+	}
+	h1.title-header {
+    	font-size: 30px;
+	}
+	header h3 {
+		font-size: 16px;
+		padding-left: 6px;
+	}
+	body {
+		padding: 14px;
+	}
+}
