@@ -1,3 +1,3 @@
-# js-start
+# landing-page-parallax
 
-<a href="https://eriksenlezama.github.io/js-start/"><strong>DEMO</strong></a>
+<a href="https://eriksenlezama.github.io/landing-page-parallax/"><strong>DEMO</strong></a>
